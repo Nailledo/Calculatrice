@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoutonVibrant">
+        <attr name="buttonType" format="enum">
+            <enum name="number" value="0" />
+            <enum name="operator" value="1" />
+            <enum name="special" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Calculatrice</string>
+    <string name="btn0">0</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="btnEgal">EXE</string>
+
+    <string name="btnPlus">+</string>
+    <string name="btnMoins">-</string>
+    <string name="btnDiviser">/</string>
+    <string name="btnMultiplier">*</string>
+    <string name="btnDel">DEL</string>
+    <string name="btnPoint">.</string>
+    <string name="btnAC">AC</string>
+    <string name="btnPourcentage">%</string>
+    <string name="btnParenOuverte">(</string>
+    <string name="btnParenFerme">)</string>
+    <string name="btnMod">MOD</string>
+    <string name="btnRacineCarre">√</string>
+    <string name="btnAuCarre">²</string>
+    <string name="btnExposant">^</string>
+    <string name="btnPI">π</string>
+    <string name="btnFactorielle">!</string>
+    <string name="btnANS">Ans</string>
+    <string name="btnHaut">▲</string>
+    <string name="btnGauche">◄</string>
+    <string name="btnDroite">►</string>
+    <string name="btnBas">▼</string>
+
+
+</resources>

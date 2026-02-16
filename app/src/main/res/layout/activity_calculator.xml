@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    android:background="#CECECE">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:textColor="@color/black"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/ecran21"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="35dp"
+            android:gravity="bottom|start"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/ecran22"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="35dp"
+            android:gravity="bottom|end"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/ecran11"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="35dp"
+            android:gravity="bottom|start"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/ecran12"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="35dp"
+            android:gravity="bottom|end"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/ecran"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_columnSpan="2"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#CECECE"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnHaut"
+            android:onClick="boutonDeplacement"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#CECECE"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnGauche"
+            android:onClick="boutonDeplacement"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnBas"
+            android:onClick="boutonDeplacement"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnDroite"
+            android:onClick="boutonDeplacement"/>
+
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="8"
+        android:gravity="center"
+        android:background="@drawable/border">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FFFFFF"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#FFFFFF"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#E04040"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnAC"
+            android:onClick="boutonDeleteAll"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#E04040"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnDel"
+            android:onClick="boutonDelete"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnPourcentage"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnParenOuverte"
+            android:onClick="boutonOperation"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#AFAFAF"
+            android:text="@string/btnParenFerme"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnMod"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnRacineCarre"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnAuCarre"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnExposant"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnPI"
+            android:onClick="boutonNumero"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn7"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn8"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn9"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnPlus"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn4"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn5"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn6"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnMoins"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn1"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn2"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn3"
+            android:onClick="boutonNumero"/>
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnDiviser"
+            android:onClick="boutonOperation"/>
+
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="3"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/btn0"
+            android:onClick="boutonNumero"/>
+
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnMultiplier"
+            android:onClick="boutonOperation"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnPoint"
+            android:onClick="boutonNumero"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnFactorielle"
+            android:onClick="boutonNumero"/>
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="#000000"
+            android:text="@string/btnANS"
+            android:onClick="boutonOperation"/>
+
+
+        <com.calculatrice.BoutonVibrant
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textStyle="bold"
+            android:backgroundTint="#2A9533"
+            android:textColor="#000000"
+            android:text="@string/btnEgal"
+            android:onClick="boutonEgal"/>
+
+    </GridLayout>
+
+</LinearLayout>
