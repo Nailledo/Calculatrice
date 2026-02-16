@@ -1,6 +1,6 @@
 # My Calculatrice
 
-Une application de calculatrice Android développée avec Java et Android Studio. Elle propose une interface inspirée du style "pixel art" pour un rendu rétro et minimaliste.
+Une application de calculatrice Android développée avec Java et Android Studio.
 
 ---
 
@@ -9,7 +9,8 @@ Une application de calculatrice Android développée avec Java et Android Studio
 L'application est divisée en plusieurs sections interactives :
 
 * **Opérations de base :** Addition, soustraction, multiplication et division.
-* **Fonctions mathématiques :** * Calcul de modulo (MOD).
+* **Fonctions mathématiques :** 
+    * Calcul de modulo (MOD).
     * Mise au carré et puissance.
     * Calcul de factorielles (!) et constante Pi (π).
 * **Navigation :** Pavé directionnel pour naviguer dans l'expression ou l'historique.
